@@ -75,7 +75,7 @@ class CallbackGenerator implements Iterator
     /**
      * Return the current element.
      */
-    public function current()
+    public function current(): mixed
     {
         $handle = $this->_callback;
 
@@ -85,7 +85,7 @@ class CallbackGenerator implements Iterator
     /**
      * Return the key of the current element.
      */
-    public function key()
+    public function key(): mixed
     {
         return $this->_key;
     }

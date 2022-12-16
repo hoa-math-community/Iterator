@@ -74,7 +74,7 @@ class FileSystem extends \FilesystemIterator
      * Current.
      * Please, see \FileSystemIterator::current() method.
      */
-    public function current()
+    public function current(): mixed
     {
         $out = parent::current();
 

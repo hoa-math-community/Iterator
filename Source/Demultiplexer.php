@@ -81,7 +81,7 @@ class Demultiplexer implements Iterator
     /**
      * Return the current element.
      */
-    public function current()
+    public function current(): mixed
     {
         if (null !== $this->_current) {
             return $this->_current;
@@ -95,7 +95,7 @@ class Demultiplexer implements Iterator
     /**
      * Return the key of the current element.
      */
-    public function key()
+    public function key(): mixed
     {
         return $this->_iterator->key();
     }

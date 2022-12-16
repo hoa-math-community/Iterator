@@ -75,7 +75,7 @@ class Directory extends \DirectoryIterator
      * Current.
      * Please, see \DirectoryIterator::current() method.
      */
-    public function current()
+    public function current(): mixed
     {
         $out = parent::current();
 

@@ -80,7 +80,7 @@ class Directory extends \RecursiveDirectoryIterator
      * Current.
      * Please, see \RecursiveDirectoryIterator::current() method.
      */
-    public function current()
+    public function current(): mixed
     {
         $out = parent::current();
 
