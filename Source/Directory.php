@@ -62,7 +62,7 @@ class Directory extends \DirectoryIterator
      * Please, see \DirectoryIterator::__construct() method.
      * We add the $splFileInfoClass parameter.
      */
-    public function __construct(string $path, string $splFileInfoClass = null)
+    public function __construct(string $path, ?string $splFileInfoClass = null)
     {
         $this->_splFileInfoClass = $splFileInfoClass;
         parent::__construct($path);

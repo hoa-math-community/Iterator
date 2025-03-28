@@ -70,7 +70,7 @@ class Repeater implements Iterator
     /**
      * Constructor.
      */
-    public function __construct(iterable $iterator, int $n, callable $body = null)
+    public function __construct(iterable $iterator, int $n, ?callable $body = null)
     {
         if (0 >= $n) {
             throw new Exception(
